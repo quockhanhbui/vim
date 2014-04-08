@@ -218,6 +218,10 @@ inoremap <tab> <c-r>=CompleteOrTab()<cr>
 " create new tab not in Nerdtree
 nnoremap <Leader>t :tab new<cr>
 
+" adjust windows width  Leader increate | Leader decreate
+nnoremap <Leader>2 :vertical resize +10<cr>
+nnoremap <Leader>1 :vertical resize -10<cr>
+
 " search with ack
 let g:path_to_search_app = "/usr/bin/X11/ack-grep"
 
