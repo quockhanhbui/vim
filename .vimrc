@@ -87,7 +87,9 @@ set mouse=a
 set scrolloff=99
 
 " Use + to copy to clipboard
-let g:clipbrdDefaultReg = '+'
+" let g:clipbrdDefaultReg = '+'
+" copy paste directly to clipboard: Using for vim 7.3.74+
+set clipboard=unnamedplus
 
 " Spaces no tabs
 set expandtab
