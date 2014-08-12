@@ -88,8 +88,13 @@ set scrolloff=99
 
 " Use + to copy to clipboard
 " let g:clipbrdDefaultReg = '+'
-" copy paste directly to clipboard: Using for vim 7.3.74+
-set clipboard=unnamedplus
+" copy paste directly to clipboard
+" set clipboard=unnamedplus
+" Map ctrl+c ctrl+v to copy from clipboard
+vmap <C-c> "+y
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+
 
 " Spaces no tabs
 set expandtab
