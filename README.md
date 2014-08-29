@@ -2,6 +2,7 @@ vim
 ===
 
 ## Tutorial to use vim
+ - Download zip file
  - extract and copy folder .vim to ~/.vim
  - copy file ~/.vim/.vimrc to ~/.vimrc
 
@@ -20,3 +21,4 @@ sudo apt-get install ack-grep
 sudo apt-get install vim-gtk
 ```
 
+## And coding like a programmer :)
