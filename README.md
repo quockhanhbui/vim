@@ -3,6 +3,7 @@ vim
 
 ## Tutorial to use vim
  - Download zip file
+ - Delete old folder ~/.vim    rm -r ~/.vim
  - extract and copy folder .vim to ~/.vim
  - copy file ~/.vim/.vimrc to ~/.vimrc
 
