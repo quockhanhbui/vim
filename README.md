@@ -22,4 +22,12 @@ sudo apt-get install ack-grep
 sudo apt-get install vim-gtk
 ```
 
-## And coding like a programmer :)
+
+### Features:
+ * **ctrl + p** : fuzzy search file in folder
+ * nerd tree:  **ctrl + n**, **\ + n** to open
+ * comment-uncomment code: **gcc**
+ * **ctrl + n** when edit: auto complete
+ * ...
+
+
