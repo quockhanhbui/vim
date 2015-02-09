@@ -17,6 +17,10 @@ snippet ead
 	<% ${1}.each do |${2}| %>
 		${3}
 	<% end %>
+snippet if
+	<% if ${1} %>
+	  ${2}
+	<% end %>
 snippet for
 	<% for ${2:item} in ${1} %>
 		${3}
@@ -57,7 +61,7 @@ snippet ffcb
 	<%= ${1:f}.check_box :${2:attribute} %>
 snippet ffe
 	<% error_messages_for :${1:model} %>
-	
+
 	<% form_for @${2:model} do |f| %>
 		${3}
 	<% end %>
