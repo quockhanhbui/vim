@@ -53,6 +53,8 @@ filetype plugin indent on
 
 " Some systems don't turn on syntax by default
 syntax on
+nnoremap <leader>sf :syntax off<cr>
+nnoremap <leader>ss :syntax on<cr>
 
 " To have list of options instead of one default
 set wildmenu
@@ -76,9 +78,6 @@ autocmd BufWrite * if ! &bin | call DoAndComeBack("%s/\\s\\+$//e") | endif
 autocmd BufNewFile,BufRead *.mak  set filetype=html
 " JSON syntax highlighting for free
 autocmd BufNewFile,BufRead *.json set filetype=javascript
-
-" Automatically disable paste mode
-au InsertLeave * set nopaste
 
 " Enable mouse support in console
 set mouse=a
@@ -212,6 +211,8 @@ nnoremap * :set hlsearch<cr>:let @/="\\<".expand("<cword>")."\\>"<cr>
 
 " Quick paste toggle
 nnoremap <leader>p :set paste!<cr>
+" Automatically disable paste mode
+au InsertLeave * set nopaste
 
 " Quick fold toggle
 " nnoremap <space> za
@@ -226,8 +227,8 @@ inoremap <tab> <c-r>=CompleteOrTab()<cr>
 nnoremap <Leader>t :tab new<cr>
 
 " adjust windows width  Leader increate | Leader decreate
-nnoremap <Leader>1 :vertical resize +10<cr>
-nnoremap <Leader>2 :vertical resize -10<cr>
+nnoremap <Leader>1 :vertical resize +20<cr>
+nnoremap <Leader>2 :vertical resize -20<cr>
 
 " search with ack
 let g:path_to_search_app = "/usr/bin/X11/ack-grep"
