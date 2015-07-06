@@ -4,7 +4,7 @@ vim
 ## Tutorial to use vim
  - Download zip file
  - Delete old folder ~/.vim  :  rm -r ~/.vim
- - extract and copy folder .vim to ~/.vim
+ - extract and copy folder **vim-master** to ~/.vim
  - copy file ~/.vim/.vimrc to ~/.vimrc
 
 ### if not installed vim
